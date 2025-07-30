@@ -24,6 +24,5 @@ describe('Fluxo de login', () => {
 
       cy.get('.d-flex > .btn').click();
 
-
   });
 })
