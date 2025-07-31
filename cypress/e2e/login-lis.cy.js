@@ -1,4 +1,4 @@
-describe('Fluxo de login', () => {
+describe('Fluxo de Cadastro de item', () => {
   it('Deve realizar login com sucesso', () => {
     cy.visit('https://hlis.pslogistica.com.br/login/'); // Altere para a URL real
 
@@ -21,7 +21,6 @@ describe('Fluxo de login', () => {
       .should('be.visible' ,'Selecionar Base')
       .select('CKBR BEBIDAS LTDA')
       .should('have.value', '66');
-
       cy.get('.d-flex > .btn').click();
 
   });
