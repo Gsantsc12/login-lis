@@ -29,12 +29,12 @@ describe('Cadastro de pessoas', () => {
     cy.get('.active > .submenu > :nth-child(1) > a').click();
     cy.get(':nth-child(1) > .d-flex > .btn').click({ force: true });
 
-    cy.get('#razao_social_nome').type('Testado');
-    cy.get('#nome_fantasia').type('Tete');
-    cy.get('#cnpj_cpf').type('50.054.467/0001-92');
+    cy.get('#razao_social_nome').type('Testad');
+    cy.get('#nome_fantasia').type('Tee');
+    cy.get('#cnpj_cpf').type('20.777.998/0001-42');
 // Dados -endereço
     cy.get('#inscricao_estadual').type('ISENTO');
-    cy.get('#email_contato').type('Teste@tet.com');
+    cy.get('#email_contato').type('Teste@tt.com');
     cy.get('#telefone_contato').type('11992999299');
     cy.get('#cep').type('06160180');
     cy.wait(2000);

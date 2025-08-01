@@ -30,10 +30,10 @@ describe('Cadastro de Usuarios', () => {
 
       cy.contains('a.btn.btn-pier', 'Cadastrar').click({ force: true });
 
-      cy.get('#username').type('tee.te');
+      cy.get('#username').type('te.te');
       cy.get('#senha').type('teste12');
       cy.get('#confirmar_senha').type('teste12')
-      cy.get('#email').type('teste@tiuyts.com')
+      cy.get('#email').type('teste@tiuys.com')
       cy.get('#nome').type('teste')
       cy.get('#sobrenome').type('teste')
       cy.get('#telefone').type('11999009900')

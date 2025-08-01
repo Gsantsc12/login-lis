@@ -30,7 +30,7 @@ describe('Cadastro de clientes', () => {
 
     cy.contains('a.btn.btn-pier', 'Cadastrar').click({ force: true });
 
-    cy.get('#sigla_cliente').click().type('pop');
+    cy.get('#sigla_cliente').click().type('ZAW');
     cy.get('.form-input > .btn').click();
 
     cy.get('#select-galpao')

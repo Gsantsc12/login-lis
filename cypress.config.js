@@ -8,6 +8,10 @@ module.exports = defineConfig({
     html: false,
     json: true
   },
+  video: true, // ✅ grava vídeo
+  videosFolder: "cypress/videos", // pasta onde os vídeos são salvos
+  videoCompression: 32, // compressão do vídeo
+  trashAssetsBeforeRuns: true, // limpa vídeos antigos
   e2e: {
     setupNodeEvents(on, config) {
       return config;

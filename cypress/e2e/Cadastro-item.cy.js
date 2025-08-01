@@ -39,8 +39,8 @@ describe('Fluxo de Cadastro de item', () => {
       cy.get('#modalGalpao > .modal-dialog > .modal-content > .modal-header > .btn-close').click();
 
         //
-      cy.get(':nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) > .form-input > input').type('1234888');
-      cy.get(':nth-child(1) > :nth-child(3) > .form-input > input').type('vvkppk');
+      cy.get(':nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) > .form-input > input').type('123488');
+      cy.get(':nth-child(1) > :nth-child(3) > .form-input > input').type('rfxmw');
 
       cy.get('#grupo_item')
       .should('be.visible' , 'Selecione')
