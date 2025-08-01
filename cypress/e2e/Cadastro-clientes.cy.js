@@ -1,5 +1,5 @@
-describe('Cadastro de Usuarios', () => {
-  it('Deve realizar login com sucesso', () => {
+describe('Cadastro de clientes', () => {
+  it('Deve cadastrar um cliente', () => {
     cy.visit('https://hlis.pslogistica.com.br/login/');
 
     // Inserção das credenciais
@@ -30,7 +30,7 @@ describe('Cadastro de Usuarios', () => {
 
     cy.contains('a.btn.btn-pier', 'Cadastrar').click({ force: true });
 
-    cy.get('#sigla_cliente').click().type('rrr');
+    cy.get('#sigla_cliente').click().type('pop');
     cy.get('.form-input > .btn').click();
 
     cy.get('#select-galpao')
@@ -42,10 +42,10 @@ describe('Cadastro de Usuarios', () => {
 
     cy.contains('#btn-adicionar-galpao', 'Adicionar').click({ force: true });
 
-    cy.get('#nome_divisao_input').type('548754');
+    cy.get('#nome_divisao_input').type('545');
 
     cy.get('.col-md-8 > [data-bs-toggle="modal"]').click();
-    cy.get('#cnpj_pesq_cliente').type('36742194000148');
+    cy.get('#cnpj_pesq_cliente').type('30543189000120');
     cy.contains('#btn_carreg_infos_cliente', 'Pesquisar').click({ force: true });
 
     cy.get('#body_pessoas_tabela > tr > :nth-child(1)').click();

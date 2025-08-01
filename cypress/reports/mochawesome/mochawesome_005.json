@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-01T08:25:43.295Z",
+    "end": "2025-08-01T08:25:51.806Z",
+    "duration": 8511,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "20dcd01d-8cf0-4f00-b3eb-a8ec12d8e0c3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-lis.cy.js",
+      "file": "cypress\\e2e\\login-lis.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f0823a8-0e38-4cd5-b966-534c0c20b163",
+          "title": "Fluxo de Cadastro de item",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve realizar login errado",
+              "fullTitle": "Fluxo de Cadastro de item Deve realizar login errado",
+              "timedOut": null,
+              "duration": 7075,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://hlis.pslogistica.com.br/login/'); // Altere para a URL real\n// Inserçao das credencias\ncy.get(':nth-child(1) > #search').type('gabriel.santos');\ncy.get(':nth-child(2) > #search').type('12345');\ncy.get('.box_fields > div.w-100 > .custom-button-login').click();\n// Seleciona o cliente, base e divisão\ncy.get('#cliente').should('be.visible', 'Selecionar cliente').select('HNK - CKBR BEBIDAS LTDA').should('have.value', '57');\ncy.get('#base').should('be.visible', 'Selecionar Base').select('Matriz PierServ').should('have.value', '1'); // Confirma se foi selecionado corretamente\ncy.get('#divisao').should('be.visible', 'Selecionar Base').select('CKBR BEBIDAS LTDA').should('have.value', '66');\ncy.get('.d-flex > .btn').click();",
+              "err": {},
+              "uuid": "9a4b4ff2-d90e-4d81-a480-adb7a1ca69e3",
+              "parentUUID": "8f0823a8-0e38-4cd5-b966-534c0c20b163",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a4b4ff2-d90e-4d81-a480-adb7a1ca69e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7075,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

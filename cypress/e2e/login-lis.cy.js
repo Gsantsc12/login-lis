@@ -1,5 +1,5 @@
 describe('Fluxo de Cadastro de item', () => {
-  it('Deve realizar login com sucesso', () => {
+  it('Deve realizar login errado', () => {
     cy.visit('https://hlis.pslogistica.com.br/login/'); // Altere para a URL real
 
     // Inserçao das credencias

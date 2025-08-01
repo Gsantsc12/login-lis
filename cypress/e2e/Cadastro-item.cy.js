@@ -1,5 +1,5 @@
 describe('Fluxo de Cadastro de item', () => {
-  it('Deve realizar login com sucesso', () => {
+  it('Deve Cadastrar um item', () => {
     cy.visit('https://hlis.pslogistica.com.br/login/'); // Altere para a URL real
 
     // Inserçao das credencias
@@ -39,8 +39,8 @@ describe('Fluxo de Cadastro de item', () => {
       cy.get('#modalGalpao > .modal-dialog > .modal-content > .modal-header > .btn-close').click();
 
         //
-      cy.get(':nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) > .form-input > input').type('12345');
-      cy.get(':nth-child(1) > :nth-child(3) > .form-input > input').type('vvbk');
+      cy.get(':nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) > .form-input > input').type('1234888');
+      cy.get(':nth-child(1) > :nth-child(3) > .form-input > input').type('vvkppk');
 
       cy.get('#grupo_item')
       .should('be.visible' , 'Selecione')
@@ -53,9 +53,9 @@ describe('Fluxo de Cadastro de item', () => {
       .should('have.value', '19');
       cy.wait(3000);
 
-      cy.get(':nth-child(3) > :nth-child(1) > .form-input > input').type('teste');
-      cy.get(':nth-child(3) > :nth-child(2) > .form-input > input').type('teste');
-      cy.get(':nth-child(3) > :nth-child(3) > .form-input > input').type('teste');
+      cy.get(':nth-child(3) > :nth-child(1) > .form-input > input').type('tste');
+      cy.get(':nth-child(3) > :nth-child(2) > .form-input > input').type('tste');
+      cy.get(':nth-child(3) > :nth-child(3) > .form-input > input').type('tste');
 
       cy.get(':nth-child(3) > :nth-child(3) > .form-input > input').type('1');
       cy.get('.row > :nth-child(1) > input').type('1');
