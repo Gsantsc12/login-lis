@@ -46,7 +46,9 @@ describe('Cadastro de clientes', () => {
 
     cy.get('.col-md-8 > [data-bs-toggle="modal"]').click();
     cy.get('#cnpj_pesq_cliente').type('30543189000120');
-    cy.contains('#btn_carreg_infos_cliente', 'Pesquisar').click({ force: true });
+    cy.contains('#btn_carreg_infos_cliente', 'Pesquisar').click({
+      force: true,
+    });
 
     cy.get('#body_pessoas_tabela > tr > :nth-child(1)').click();
 

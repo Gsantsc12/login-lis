@@ -32,7 +32,7 @@ describe('Cadastro de pessoas', () => {
     cy.get('#razao_social_nome').type('Testad');
     cy.get('#nome_fantasia').type('Tee');
     cy.get('#cnpj_cpf').type('20.777.998/0001-42');
-// Dados -endereço
+    // Dados -endereço
     cy.get('#inscricao_estadual').type('ISENTO');
     cy.get('#email_contato').type('Teste@tt.com');
     cy.get('#telefone_contato').type('11992999299');
@@ -43,14 +43,12 @@ describe('Cadastro de pessoas', () => {
     cy.get('#telefone_endereco').type('11992909900');
 
     cy.get('#template_filter')
-      .should('be.visible' , 'Selecione um Modelo')
+      .should('be.visible', 'Selecione um Modelo')
       .select('70')
       .should('have.value', '70');
 
     cy.get('#btnCadastrarPessoa').click();
 
     cy.contains('Pessoa cadastrada com sucesso!');
-
-
   });
 });

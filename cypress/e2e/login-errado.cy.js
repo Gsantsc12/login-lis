@@ -8,4 +8,4 @@ describe('Fluxo de login errado', () => {
     cy.get('.box_fields > div.w-100 > .custom-button-login').click();
     cy.contains('Usuário ou senha inválidos.').should('be.visible');
   });
-})
+});
